@@ -32,23 +32,25 @@
 <body class="bg-slate-950 text-slate-200 antialiased">
 
     <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="text-xl font-bold tracking-tighter text-indigo-500">JDH.dev</div>
-            <div class="flex items-center gap-8">
-                <div class="hidden md:flex bg-slate-900 p-1 rounded-lg border border-slate-700">
-                    <button onclick="changeLang('ko')" class="lang-btn px-3 py-1 text-xs rounded-md transition-all bg-indigo-600 text-white" id="btn-ko">KR</button>
-                    <button onclick="changeLang('ja')" class="lang-btn px-3 py-1 text-xs rounded-md transition-all text-slate-400" id="btn-ja">JP</button>
-                    <button onclick="changeLang('en')" class="lang-btn px-3 py-1 text-xs rounded-md transition-all text-slate-400" id="btn-en">EN</button>
-                </div>
-                <ul class="hidden md:flex gap-6 text-sm font-medium">
-                    <li><a href="#about" class="hover:text-indigo-400 transition-colors" data-i18n="nav-about">소개</a></li>
-                    <li><a href="#skills" class="hover:text-indigo-400 transition-colors" data-i18n="nav-skills">기술</a></li>
-                    <li><a href="#projects" class="hover:text-indigo-400 transition-colors" data-i18n="nav-projects">프로젝트</a></li>
-                    <li><a href="#contact" class="hover:text-indigo-400 transition-colors" data-i18n="nav-contact">문의</a></li>
-                </ul>
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="text-xl font-bold tracking-tighter text-indigo-500">JDH.dev</div>
+        
+        <div class="flex items-center gap-4 md:gap-8">
+            <div class="flex bg-slate-900 p-1 rounded-lg border border-slate-700 scale-90 md:scale-100">
+                <button onclick="changeLang('ko')" class="lang-btn px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-md transition-all bg-indigo-600 text-white" id="btn-ko">KR</button>
+                <button onclick="changeLang('ja')" class="lang-btn px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-md transition-all text-slate-400" id="btn-ja">JP</button>
+                <button onclick="changeLang('en')" class="lang-btn px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-md transition-all text-slate-400" id="btn-en">EN</button>
             </div>
+
+            <ul class="hidden md:flex gap-6 text-sm font-medium border-l border-slate-800 pl-8">
+                <li><a href="#about" class="hover:text-indigo-400 transition-colors" data-i18n="nav-about">소개</a></li>
+                <li><a href="#skills" class="hover:text-indigo-400 transition-colors" data-i18n="nav-skills">기술</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400 transition-colors" data-i18n="nav-projects">프로젝트</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400 transition-colors" data-i18n="nav-contact">문의</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <section class="min-h-screen flex items-center justify-center pt-16 px-6">
         <div class="max-w-4xl text-center">
